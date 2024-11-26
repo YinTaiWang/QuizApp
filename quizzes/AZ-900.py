@@ -1,5 +1,8 @@
+# Reference:
+# https://www.gratisexam.com/
+
 quiz_data = [
-    {
+    {#1
         "question": (
             "You have an on-premises network that contains several servers."
             "\nYou plan to migrate all the servers to Azure."
@@ -19,37 +22,42 @@ quiz_data = [
             "\nIn this question, you could have servers that are replicated across datacenters."
             )
             },
-    {
+    {#2
         "question": (
-            "This question requires that you evaluate the underlined text to determine if it is correct."
-            
-            "\n\nAn organization that hosts its infrastructure \"in a private cloud\" can close its data center."
-            
-            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            "What are two characteristics of the public cloud? Each correct answer presents a complete solution."
             ),
         "options": [
-            "A. No change is needed.",
-            "B. in a hybrid cloud",
-            "C. in the public cloud",
-            "D. on a Hyper-V host"
+            "A. dedicated hardware",
+            "B. unsecured connections",
+            "C. limited storage",
+            "D. metered pricing",
+            "E. self-service management"
         ],
-        "answer": "C",
+        "answer": ["D", "E"],
         "explanation": (
-            "A private cloud is hosted in your datacenter. Therefore, you cannot close your datacenter if you are using a private cloud."
-            "\nA public cloud is hosted externally, for example, in Microsoft Azure. An organization that hosts its infrastructure in a public cloud can close its data center."
-        )
-    },
-    {
+            "With the public cloud, you get pay-as-you-go pricing -- you pay only for what you use, no CapEx costs."
+            "\nWith the public cloud, you have self-service management. You are responsible for the deployment and configuration of the cloud resources such as virtual machines or web sites."
+                "The underlying hardware that hosts the cloud resources is managed by the cloud provider."
+            
+            "\n\nIncorrect Answers:"
+            "\nA: You don't have dedicated hardware. The underlying hardware is shared so you could have multiple customers using cloud resources hosted on the same physical hardware."
+            "\nB: Connections to the public cloud are secure."
+            "\nC: Storage is not limited. You can have as much storage as you like."
+            )
+            },
+    {#3
         "question": (
-            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution."
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
             "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
             
-            "\n\nYour company plans to migrate all its data and resources to Azure."
-            "\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
+            "\n\n\nYour company plans to migrate all its data and resources to Azure."
+            "\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
             "\nYou need to deploy an Azure environment that meets the company migration plan."
             "\nSolution: You create an Azure App Service and Azure SQL databases."
             
-            "\n\nDoes this meet the goal?"),
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
@@ -57,30 +65,55 @@ quiz_data = [
         "answer": "A",
         "explanation": "Azure App Service and Azure SQL databases are examples of Azure PaaS solutions. Therefore, this solution does meet the goal."
         },
-    {
+    {#4
         "question": (
-            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution."
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
             "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
             
-            "\n\nYour company plans to migrate all its data and resources to Azure."
-            "\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
+            "\n\n\nYour company plans to migrate all its data and resources to Azure."
+            "\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
             "\nYou need to deploy an Azure environment that meets the company migration plan."
             "\nSolution: You create an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed."
             
-            "\n\nDoes this meet the goal?"),
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "B",
-        "explanation": "Azure App Service is a PaaS (Platform as a Service) service. However, Azure virtual machines are an IaaS (Infrastructure as a Service) service. Therefore, this solution does not meet the goal."
+        "explanation": (
+            "Azure App Service is a PaaS (Platform as a Service) service. However, Azure virtual machines are an IaaS (Infrastructure as a Service) service."
+            "\nTherefore, this solution does not meet the goal."
+            )
         },
-    {
+    {#5
         "question": (
-            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution."
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
             "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
             
-            "\n\nYour company hosts an accounting application named App1 that is used by all the customers of the company."
+            "\n\n\nYour company plans to migrate all its data and resources to Azure."
+            "\nThe company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
+            "\nYou need to deploy an Azure environment that meets the company migration plan."
+            "\nSolution: You create an Azure App Service and Azure Storage accounts."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Azure App Service is a PaaS (Platform as a Service) service. However, Azure Storage accounts are an IaaS (Infrastructure as a Service) service."
+            "\nTherefore, this solution does not meet the goal."
+            )
+        },
+    {#6
+        "question": (
+            "Your company hosts an accounting application named App1 that is used by all the customers of the company."
             "\nApp1 has low usage during the first three weeks of each month and very high usage during the last week of each month."
             "\nWhich benefit of Azure Cloud Services supports cost management for this type of usage pattern?"
             ),
@@ -92,11 +125,17 @@ quiz_data = [
         ],
 
         "answer": "C",
-        "explanation": "Elasticity in this case is the ability to provide additional compute resource when needed and reduce the compute resource when not needed to reduce costs. \nAutoscaling is an example of elasticity.\nElastic computing is the ability to quickly expand or decrease computer processing, memory and storage resources to meet changing demands without worrying\nabout capacity planning and engineering for peak usage. Typically controlled by system monitoring tools, elastic computing matches the amount of resources\nallocated to the amount of resources actually needed without disrupting operations. With cloud elasticity, a company avoids paying for unused capacity or idle\nresources and doesn’t have to worry about investing in the purchase or maintenance of additional resources and equipment."
-    },
-            
-    {
-        "question": "You plan to migrate a web application to Azure. The web application is accessed by external users. \nYou need to recommend a cloud deployment solution to minimize the amount of administrative effort used to manage the web application. \nWhat should you include in the recommendation?",
+        "explanation": (
+            "Elasticity in this case is the ability to provide additional compute resource when needed and reduce the compute resource when not needed to reduce costs."
+            "\nAutoscaling is an example of elasticity."
+            )
+        },
+    {#7
+        "question": (
+            "You plan to migrate a web application to Azure. The web application is accessed by external users."
+            "\nYou need to recommend a cloud deployment solution to minimize the amount of administrative effort used to manage the web application."
+            "\n\nWhat should you include in the recommendation?"
+            ),
         "options": [
             "A. Software as a Service (SaaS)",
             "B. Platform as a Service (PaaS)",
@@ -104,10 +143,16 @@ quiz_data = [
             "D. Database as a Service (DaaS)"
         ],
         "answer": "B",
-        "explanation": "Azure App Service is a PaaS (Platform as a Service) service.  However, Azure Storage accounts are an IaaS (Infrastructure as a Service) service.  Therefore, this\nsolution does not meet the goal.\nQUESTION 7\nYour company hosts an accounting application named App1 that is used by all the customers of the company. \nApp1 has low usage during the first three weeks of each month and very high usage during the last week of each month. \nWhich benefit of Azure Cloud Services supports cost management for this type of usage pattern?\nA. high availability \nB. high latency \nC. elasticity \nD. load balancing \nCorrect Answer: C\nSection: Understand Cloud Concepts\nExplanation"
-    },
-    {
-        "question": "You plan to migrate several servers from an on-premises network to Azure. \nWhat is an advantage of using a public cloud service for the servers over an on-premises network?",
+        "explanation": (
+            "Azure App Service is a platform-as-a-service (PaaS) offering that lets you create web and mobile apps for any platform or device and connect to data anywhere, in the cloud or on-premises."
+            "\nApp Service includes the web and mobile capabilities that were previously delivered separately as Azure Websites and Azure Mobile Services."
+            )
+        },
+    {#8
+        "question": (
+            "You have an on-premises network that contains 100 servers."
+            "\nYou need to recommend a solution that provides additional resources to your users. The solution must minimize capital and operational expenditure costs."
+            "\nWhat should you include in the recommendation?"),
         "options": [
             "A. a complete migration to the public cloud",
             "B. an additional data center",
@@ -115,37 +160,62 @@ quiz_data = [
             "D. a hybrid cloud"
         ],
         "answer": "D",
-        "explanation": "A hybrid cloud is a combination of a private cloud and a public cloud.\nCapital expenditure is the spending of money up-front for infrastructure such as new servers.\nWith a hybrid cloud, you can continue to use the on-premises servers while adding new servers in the public cloud (Azure for example).  Adding new servers in\nAzure minimizes the capital expenditure costs as you are not paying for new servers as you would if you deployed new server on-premises.\nIncorrect Answers:\nA: A complete migration of 100 servers to the public cloud would involve a lot of operational expenditure (the cost of migrating all the servers).\nB: An additional data center would involve a lot of capital expenditure (the cost of the new infrastructure).\nC: A private cloud is hosted on on-premises servers to this would involve a lot of capital expenditure (the cost of the new infrastructure to host the private cloud)."
-    },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more scale sets.\nDoes this meet the goal?",
+        "explanation": (
+            "A hybrid cloud is a combination of a private cloud and a public cloud."
+            "\nCapital expenditure is the spending of money up-front for infrastructure such as new servers."
+            "\nWith a hybrid cloud, you can continue to use the on-premises servers while adding new servers in the public cloud (Azure for example). Adding new servers in Azure minimizes the capital expenditure costs as you are not paying for new servers as you would if you deployed new server on-premises."
+            
+            "\n\nIncorrect Answers:"
+            "\nA: A complete migration of 100 servers to the public cloud would involve a lot of operational expenditure (the cost of migrating all the servers)."
+            "\nB: An additional data center would involve a lot of capital expenditure (the cost of the new infrastructure)."
+            "\nC: A private cloud is hosted on on-premises servers to this would involve a lot of capital expenditure (the cost of the new infrastructure to host the private cloud)."
+            )
+        },
+    {#9
+        "question": (
+            "You plan to migrate several servers from an on-premises network to Azure."
+            "\nWhat is an advantage of using a public cloud service for the servers over an on-premises network?"
+            ),
         "options": [
-            "A. Yes",
-            "B. No"
+            "A. The public cloud is owned by the public, NOT a private corporation",
+            "B. The public cloud is a crowd-sourcing solution that provides corporations with the ability to enhance the cloud",
+            "C. All public cloud resources can be freely accessed by every member of the public",
+            "D. The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud"
         ],
         "answer": "D",
-        "explanation": "The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud.  The hardware resources (servers, infrastructure\netc.) are managed by the cloud provider. Multiple companies create resources such as virtual machines and virtual networks on the hardware resources.\nIncorrect Answers:\nA: The public cloud is not owned by the public.  In the case of Microsoft Azure, the cloud is owned by Microsoft.\nB: The public cloud is a not crowd-sourcing solution. In the case of Microsoft Azure, the cloud is owned by Microsoft.\nC: It is not true that public cloud resources can be freely accessed by every member of the public.  You pay for a cloud subscription and create accounts for your\nusers to access your cloud resources.  No one can access your cloud resources until you create user accounts and provide the appropriate access permissions.\nQUESTION 11\nNote: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more scale sets.\nDoes this meet the goal?\nA. Yes\nB. No\nCorrect Answer: B\nSection: Understand Cloud Concepts\nExplanation\nExplanation/Reference:\nExplanation:\nThis answer does not specify that the scale set will be configured across multiple data centers so this solution does not meet the goal.\nAzure virtual machine scale sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in"
-    },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more availability zones.\nDoes this meet the goal?",
+        "explanation": (
+            "The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud. The hardware resources (servers, infrastructure etc.) are managed by the cloud provider."
+            "\nMultiple companies create resources such as virtual machines and virtual networks on the hardware resources."
+            
+            "\n\nIncorrect Answers:"
+            "\nA: The public cloud is not owned by the public. In the case of Microsoft Azure, the cloud is owned by Microsoft."
+            "\nB: The public cloud is a not crowd-sourcing solution."
+            "\nC: It is not true that public cloud resources can be freely accessed by every member of the public. You pay for a cloud subscription and create accounts for your users to access your cloud resources."
+            "\nNo one can access your cloud resources until you create user accounts and provide the appropriate access permissions."
+            )
+        },
+    {#10
+        "question": (
+            "In which type of cloud model are all the hardware resources owned by a third-party and shared between multiple tenants?"
+            ),
         "options": [
-            "A. Yes",
-            "B. No"
+            "A. private",
+            "B. hybrid",
+            "C. public"
         ],
-        "answer": "A",
-        "explanation": "Availability zones expand the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically\nseparate zone, within an Azure region. There are three Availability Zones per supported Azure region.\nEach Availability Zone has a distinct power source, network, and cooling. By architecting your solutions to use replicated VMs in zones, you can protect your apps\nand data from the loss of a datacenter. If one zone is compromised, then replicated apps and data are instantly available in another zone.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/availability"
-    },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more regions.\nDoes this meet the goal?",
-        "options": [
-            "A. Yes",
-            "B. No"
-        ],
-        "answer": "A",
-        "explanation": "By deploying the virtual machines to two or more regions, you are deploying the virtual machines to multiple datacenters.  This will ensure that the services running\non the virtual machines are available if a single data center fails.\nAzure operates in multiple datacenters around the world. These datacenters are grouped in to geographic regions, giving you flexibility in choosing where to build\nyour applications.\nYou create Azure resources in defined geographic regions like 'West US', 'North Europe', or 'Southeast Asia'. You can review the list of regions and their locations.\nWithin each region, multiple datacenters exist to provide for redundancy and availability.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions"
-    },
-    {
-        "question": "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center.\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription.\nYou need to identify which expenditure model to use for the planned Azure solution.\nWhich expenditure model should you identify?",
+        "answer": "C",
+        "explanation": (
+            "Microsoft Azure, Amazon Web Services and Google Cloud are three examples of public cloud services."
+            "\nMicrosoft, Amazon and Google own the hardware. The tenants are the customers who use the public cloud services."
+            )
+        },
+    {#11
+        "question": (
+            "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center."
+            "\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription."
+            "\nYou need to identify which expenditure model to use for the planned Azure solution."
+            "\n\nWhich expenditure model should you identify?"
+            ),
         "options": [
             "A. operational",
             "B. elastic",
@@ -153,7 +223,29 @@ quiz_data = [
             "D. scalable"
         ],
         "answer": "A",
-        "explanation": "One of the major changes that you will face when you move from on-premises cloud to the public cloud is the switch from capital expenditure (buying hardware) to\noperating expenditure (paying for service as you use it). This switch also requires more careful management of your costs. The benefit of the cloud is that you can\nfundamentally and positively affect the cost of a service you use by merely shutting down or resizing it when it's not needed."
+        "explanation": (
+            "One of the major changes that you will face when you move from on-premises cloud to the public cloud is the switch from capital expenditure (buying hardware) to operating expenditure (paying for service as you use it)."
+            "\nThis switch also requires more careful management of your costs. The benefit of the cloud is that you can fundamentally and positively affect the cost of a service you use by merely shutting down or resizing it when it's not needed."
+            )
+    },
+    {#13 (12skip)
+        "question": (
+            "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center."
+            "\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription."
+            "\nYou need to identify which expenditure model to use for the planned Azure solution."
+            "\n\nWhich expenditure model should you identify?"
+            ),
+        "options": [
+            "A. operational",
+            "B. elastic",
+            "C. capital",
+            "D. scalable"
+        ],
+        "answer": "A",
+        "explanation": (
+            "One of the major changes that you will face when you move from on-premises cloud to the public cloud is the switch from capital expenditure (buying hardware) to operating expenditure (paying for service as you use it)."
+            "\nThis switch also requires more careful management of your costs. The benefit of the cloud is that you can fundamentally and positively affect the cost of a service you use by merely shutting down or resizing it when it's not needed."
+            )
     },
     {
         "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure.\nWhich resource is an example of IaaS?",
@@ -811,5 +903,43 @@ quiz_data = [
         ],
         "answer": "B",
         "explanation": "For products governed by the Modern Lifecycle Policy, Microsoft will provide a minimum of 12 months' notification prior to ending support if no successor product or\nservice is offered—excluding free services or preview releases."
-    }
+    },
+    {#ex
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            
+            "\n\nAn organization that hosts its infrastructure \"in a private cloud\" can close its data center."
+            
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
+        "options": [
+            "A. No change is needed.",
+            "B. in a hybrid cloud",
+            "C. in the public cloud",
+            "D. on a Hyper-V host"
+        ],
+        "answer": "C",
+        "explanation": (
+            "A private cloud is hosted in your datacenter. Therefore, you cannot close your datacenter if you are using a private cloud."
+            "\nA public cloud is hosted externally, for example, in Microsoft Azure. An organization that hosts its infrastructure in a public cloud can close its data center."
+            )
+    },
+    {
+        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more availability zones.\nDoes this meet the goal?",
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": "Availability zones expand the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically\nseparate zone, within an Azure region. There are three Availability Zones per supported Azure region.\nEach Availability Zone has a distinct power source, network, and cooling. By architecting your solutions to use replicated VMs in zones, you can protect your apps\nand data from the loss of a datacenter. If one zone is compromised, then replicated apps and data are instantly available in another zone.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/availability"
+    },
+    {
+        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\nSolution: You deploy the virtual machines to two or more regions.\nDoes this meet the goal?",
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": "By deploying the virtual machines to two or more regions, you are deploying the virtual machines to multiple datacenters.  This will ensure that the services running\non the virtual machines are available if a single data center fails.\nAzure operates in multiple datacenters around the world. These datacenters are grouped in to geographic regions, giving you flexibility in choosing where to build\nyour applications.\nYou create Azure resources in defined geographic regions like 'West US', 'North Europe', or 'Southeast Asia'. You can review the list of regions and their locations.\nWithin each region, multiple datacenters exist to provide for redundancy and availability.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions"
+    },
 ]
