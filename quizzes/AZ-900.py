@@ -493,6 +493,304 @@ quiz_data = [
             "\nTherefore, creating multiple resource groups, even if they are in separate datacenters does not ensure that the services running on the virtual machines are available if a single data center fails."
             )
     },
+    {#27
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou plan to deploy several Azure virtual machines."
+            "\nYou need to ensure that the services running on the virtual machines are available if a single data center fails."
+            "\nSolution: You deploy the virtual machines to a scale set."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Deploying the virtual machines to a scale set does not ensure availability if a single data center fails. While scale sets provide automatic scaling and manage VM distribution across fault domains within the same data center, they do not inherently distribute VMs across multiple data centers or Availability Zones."
+            )
+    },
+    {#28
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            "\n\n\"Resource groups\" provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions."
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
+        "options": [
+            "A. No change is needed",
+            "B. Management groups",
+            "C. Azure policies",
+            "D. Azure App Service plans"
+        ],
+        "answer": "C",
+        "explanation": (
+            "Azure policies specifically provide the ability to enforce compliance across Azure resources, whether within a single subscription or across multiple subscriptions."
+            )
+    },
+    {#29
+        "question": (
+            "Your company plans to migrate to Azure. The company has several departments. All the Azure resources used by each department will be managed by a department administrator."
+            
+            "\n\nWhat are two possible techniques to segment Azure for the departments? Each correct answer presents a complete solution."
+            ),
+        "options": [
+            "A. multiple subscriptions",
+            "B. multiple Azure Active Directory (Azure AD) directories",
+            "C. multiple regions",
+            "D. multiple resource groups"
+        ],
+        "answer": ["A","D"],
+        "explanation": (
+            "Multiple subscriptions allow departments to manage resources independently with separate billing and quotas, while resource groups enable logical organization and delegated permissions for department-specific resource management."
+            
+            "\n\nIncorrect Answers:"
+            "\nB. Multiple Azure Active Directory (Azure AD) directories: Azure AD directories are used for identity and access management, not for segmenting Azure resources by departments."
+            "\nC. Multiple regions: Regions are geographic locations where Azure resources are hosted. They are not designed for organizational segmentation or department-level management."
+            )  
+    },
+    {#30
+        "question": (
+            "You have an Azure environment that contains multiple Azure virtual machines."
+            "\nYou plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines."
+            "\nYou need to recommend which Azure resources must be created for the planned solution."
+            
+            "\n\nWhich two Azure resources should you include in the recommendation? Each correct answer presents part of the solution."
+            ),
+        "options": [
+            "A. a virtual network gateway",
+            "B. a load balancer",
+            "C. an application gateway",
+            "D. a virtual network",
+            "E. a gateway subnet"
+        ],
+        "answer": ["A","E"],
+        "explanation": (
+            "A virtual network gateway is required to establish a secure connection, such as a VPN, between your on-premises network and the Azure virtual network hosting the virtual machines."
+            "A gateway subnet is needed within the virtual network to host the virtual network gateway, enabling seamless and secure communication between the two environments."
+            
+            "\n\nIncorrect Answers:"
+            "\nB. a load balancer: A load balancer is used to distribute traffic across multiple virtual machines within a network for high availability and performance. It does not facilitate communication between on-premises networks and Azure virtual machines."
+            "\nC. an application gateway: An application gateway is used for routing and managing web traffic at the application layer (HTTP/HTTPS) within Azure. It is not designed for establishing secure communication between on-premises networks and Azure."
+            "\nD. a virtual network: While a virtual network is necessary to host Azure resources, the question states that the Azure environment with virtual machines already exists, so creating a new virtual network is not required for the planned solution."
+            )
+    },
+    {#31
+        "question": (
+            "You attempt to create several managed Microsoft SQL Server instances in an Azure environment and receive a message that you must increase your Azure subscription limits."
+            "\nWhat should you do to increase the limits?"
+            ),
+        "options": [
+            "A. Create a service health alert",
+            "B. Upgrade your support plan",
+            "C. Modify an Azure policy",
+            "D. Create a new support request"
+        ],
+        "answer": "D",
+        "explanation": (
+            "To increase subscription limits (quotas) in Azure, you need to create a support request."
+            "\nAzure allows customers to request an increase in certain resource limits, such as the number of managed SQL Server instances, by submitting a support ticket."
+            "\nThe other options are not relevant to this scenario"
+        )
+    },
+    {#32
+        "question": (
+            "Your company plans to move several servers to Azure."
+            "\nThe company’s compliance policy states that a server named FinServer must be on a separate network segment."
+            "\nYou are evaluating which Azure services can be used to meet the compliance policy requirements."
+            "\n\nWhich Azure solution should you recommend?"
+            ),
+        "options": [
+            "A. a resource group for FinServer and another resource group for all the other servers",
+            "B. a virtual network for FinServer and another virtual network for all the other servers",
+            "C. a VPN for FinServer and a virtual network gateway for each other server",
+            "D. one resource group for all the servers and a resource lock for FinServer"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Networks in Azure are known as virtual networks.  A virtual network can have multiple IP address spaces and multiple subnets."
+            "Azure automatically routes traffic between different subnets within a virtual network."
+            "\nThe question states that FinServer must be on a separate network segment."
+            "The only way to separate FinServer from the other servers in networking terms is to place the server in a different virtual network to the other servers."
+            )
+    },
+    {#33
+        "question": (
+            "You plan to map a network drive from several computers that run Windows 10 to Azure Storage."
+            "\nYou need to create a storage solution in Azure for the planned mapped drive."
+            "\nWhat should you create?"
+            ),
+        "options": [
+            "A. an Azure SQL database",
+            "B. a virtual machine data disk",
+            "C. a Files service in a storage account",
+            "D. a Blobs service in a storage account"
+        ],
+        "answer": "C",
+        "explanation": (
+            "Azure Files provides fully managed file shares in the cloud that can be accessed via the Server Message Block (SMB) protocol, making it suitable for mapping a network drive from Windows 10 computers. It allows you to map Azure file shares just like a network drive, enabling seamless integration with your on-premises or cloud environment."
+            
+            "\n\nIncorrect Answers:"
+            "\nA. Azure SQL database: This is used for relational database storage and is not relevant for file storage or mapping network drives."
+            "\nB. Virtual machine data disk: This is for attaching disks to Azure virtual machines and isn't used for shared file access."
+            "\nD. Blobs service in a storage account: Blob storage is designed for unstructured data, such as documents and media files, and cannot be mapped as a network drive via SMB."
+            )
+    },
+    {
+        "question": (
+            "Your company plans to migrate all its network resources to Azure."
+            "\nYou need to start the planning process by exploring Azure."
+            "\nWhat should you create first?"
+            ),
+        "options": [
+            "A. a subscription",
+            "B. a resource group",
+            "C. a virtual network",
+            "D. a management group"
+        ],
+        "answer": "A",
+        "explanation": (
+            "The first thing you create in Azure is a subscription. You can think of an Azure subscription as an ‘Azure account’. You get billed per subscription."
+        )
+    },
+    {#35
+        "question": "Which Azure service should you use to collect events from multiple resources into a centralized repository?",
+        "options": [
+            "A. Azure Event Hubs",
+            "B. Azure Analysis Services",
+            "C. Azure Monitor",
+            "D. Azure Stream Analytics"
+        ],
+        "answer": "A",
+        "explanation": (
+            "Azure Event Hubs is a scalable event streaming platform designed to collect and centralize events from multiple sources into a single repository for real-time or batch processing."
+            
+            "\n\nIncorrect Answers:"
+            "\nB. Azure Analysis Services: Used for building analytical models and performing complex data analysis. It does not collect or centralize events."
+            "\nC. Azure Monitor: Focused on monitoring Azure resources, collecting metrics, and logs. While it centralizes monitoring data, it’s not optimized for high-throughput event ingestion."
+            "\nD. Azure Stream Analytics: Designed for real-time data processing and analytics on event streams but relies on services like Event Hubs for data ingestion. It does not centralize events itself."
+            )
+    },
+    {#36
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou plan to deploy several Azure virtual machines."
+            "\nYou need to ensure that the services running on the virtual machines are available if a single data center fails."
+            "\nSolution: You deploy the virtual machines to two or more scale sets."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Deploying the virtual machines to two or more scale sets does not ensure availability in case of a single data center failure. While scale sets provide high availability and scalability within a region, they do not inherently distribute resources across multiple availability zones or regions to mitigate data center failures."
+            )
+    },
+    {#37
+        "question": (
+            "You need to be notified when Microsoft plans to perform maintenance that can affect the resources deployed to an Azure subscription."
+            "\nWhat should you use?"
+            ),
+        "options": [
+            "A. Azure Monitor",
+            "B. Azure Service Health",
+            "C. Azure Advisor",
+            "D. Microsoft Trust Center"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Azure Service Health provides personalized alerts and guidance when Azure maintenance or service issues impact your resources."
+            "It includes notifications for planned maintenance events that could affect your Azure subscription."
+            )
+    },
+    {#40
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nAn Azure administrator plans to run a PowerShell script that creates Azure resources."
+            "\nYou need to recommend which computer configuration to use to run the script."
+            "\nSolution: Run the script from a computer that runs Windows 10 and has the Azure PowerShell module installed."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": (
+            "To run a PowerShell script that creates Azure resources, you can use a computer running Windows 10 with the Azure PowerShell module installed. The Azure PowerShell module provides the necessary cmdlets to interact with Azure resources, and Windows 10 supports running PowerShell scripts natively."
+            "\nIn this question, the computer has the Azure PowerShell module installed. Therefore, this solution does meet the goal."
+            )
+    },
+    {#42
+        "question": (
+            "Which service provides serverless computing in Azure?"
+            ),
+        "options": [
+            "A. Azure Virtual Machines",
+            "B. Azure Functions",
+            "C. Azure storage account",
+            "D. Azure dedicated hosts",
+        ],
+        "answer": "B",
+        "explanation": (
+            "Azure Functions is a serverless computing service in Azure that allows you to run small pieces of code (functions) without managing the underlying infrastructure. It automatically scales based on demand and charges only for the compute resources used during execution."
+            )
+    },
+    {#43
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named RG1."
+            "\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1."
+            "\n<az vm create --resource-group RG1 --name VM1 --image UbuntuLTS --generate-ssh-keys>"
+            "\nYou need to create VM1 in Subscription1 by using the command."
+            "\nSolution: From the Azure portal, launch Azure Cloud Shell and select Bash. Run the command in Cloud Shell."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": (
+            "The command can be run in the Azure Cloud Shell, which is a free interactive shell with preinstalled Azure tools configured for your account."
+            )
+    },
+    {#44
+        "question": (
+            "Your company has several business units."
+            "\nEach business unit requires 20 different Azure resources for daily operation. All the business units require the same type of Azure resources."
+            "\nYou need to recommend a solution to automate the creation of the Azure resources."
+            "\nWhat should you include in the recommendations?"
+            ),
+        "options": [
+            "A. Azure Resource Manager templates",
+            "B. virtual machine scale sets",
+            "C. the Azure API Management service",
+            "D. management groups"
+        ],
+        "answer": "A",
+        "explanation": (
+            "Azure Resource Manager (ARM) templates allow you to define the infrastructure and configuration of Azure resources in a JSON file."
+            "\nThis enables you to automate the deployment of multiple resources consistently and repeatedly, making it ideal for creating the same set of resources across multiple business units."
+            )
+    },
     {
         "question": "A team of developers at your company plans to deploy, and then remove, 50 customized virtual machines each week. Thirty of the virtual machines run Windows\nServer 2016 and 20 of the virtual machines run Ubuntu Linux. \nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual machines. \nWhat should you recommend?",
         "options": [
@@ -517,29 +815,6 @@ quiz_data = [
         "explanation": "Azure Data Warehouse (now known as Azure Synapse Analytics) is a PaaS offering from Microsoft.  As with all PaaS services from Microsoft, SQL Data\nWarehouse offers an availability SLA of 99.9%.  Microsoft can offer 99.9% availability because it has high availability features built into the platform."
     },
     {
-        "question": "You plan to store 20 TB of data in Azure. The data will be accessed infrequently and visualized by using Microsoft Power BI. \nYou need to recommend a storage solution for the data. \nWhich two solutions should you recommend? Each correct answer presents a complete solution. \nNOTE: Each correct selection is worth one point.",
-        "options": [
-            "A. Azure Data Lake",
-            "B. Azure Cosmos DB",
-            "C. Azure SQL Data Warehouse",
-            "D. Azure SQL Database",
-            "E. Azure Database for PostgreSQL"
-        ],
-        "answer": "AC",
-        "explanation": "You can use Power BI to analyze and visualize data stored in Azure Data Lake and Azure SQL Data Warehouse.\nAzure Data Lake includes all of the capabilities required to make it easy for developers, data scientists and analysts to store data of any size and shape and at any\nspeed, and do all types of processing and analytics across platforms and languages. It removes the complexities of ingesting and storing all your data while making\nit faster to get up and running with batch, streaming and interactive analytics. It also integrates seamlessly with operational stores and data warehouses so that you\ncan extend current data applications."
-    },
-    {
-        "question": "You have a virtual machine named VM1 that runs Windows Server 2016. VM1 is in the East US Azure region. \nWhich Azure service should you use from the Azure portal to view service failure notifications that can affect the availability of VM1?",
-        "options": [
-            "A. a physical server failure",
-            "B. an Azure region failure",
-            "C. a storage failure",
-            "D. an Azure data center failure"
-        ],
-        "answer": "D",
-        "explanation": "Availability zones expand the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically\nseparate zone, within an Azure region. There are three Availability Zones per supported Azure region.\nEach Availability Zone has a distinct power source, network, and cooling. By architecting your solutions to use replicated VMs in zones, you can protect your apps\nand data from the loss of a datacenter. If one zone is compromised, then replicated apps and data are instantly available in another zone.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/availability\nQUESTION 28\nYou have a virtual machine named VM1 that runs Windows Server 2016. VM1 is in the East US Azure region. \nWhich Azure service should you use from the Azure portal to view service failure notifications that can affect the availability of VM1?\nA. Azure Service Fabric \nB. Azure Monitor \nC. Azure virtual machines \nD. Azure Advisor \nCorrect Answer: C\nSection: Understand Core Azure Services\nExplanation\nExplanation/Reference:\nExplanation:\nIn the Azure virtual machines page in the Azure portal, there is a named Maintenance Status.  This column will display service issues that could affect your virtual"
-    },
-    {
         "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nAn Azure administrator plans to run a PowerShell script that creates Azure resources. \nYou need to recommend which computer configuration to use to run the script. \nSolution: Run the script from a computer that runs Linux and has the Azure CLI tools installed. \nDoes this meet the goal?",
         "options": [
             "A. Yes",
@@ -558,18 +833,6 @@ quiz_data = [
         "explanation": "A PowerShell script is a file that contains PowerShell cmdlets and code. A PowerShell script needs to be run in PowerShell.  \nIn this question, the computer has PowerShell Core 6.0 installed. Therefore, this solution does meet the goal.\nNote: To create Azure resources using PowerShell, you would need to import the Azure PowerShell module which includes the PowerShell cmdlets required to\ncreate the resources."
     },
     {
-        "question": "You have an Azure environment that contains multiple Azure virtual machines.\nYou plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines.\nYou need to recommend which Azure resources must be created for the planned solution.\nWhich two Azure resources should you include in the recommendation? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
-        "options": [
-            "A. a virtual network gateway",
-            "B. a load balancer",
-            "C. an application gateway",
-            "D. a virtual network",
-            "E. a gateway subnet"
-        ],
-        "answer": "D",
-        "explanation": "You can restrict traffic to multiple virtual networks with a single Azure firewall.\nAzure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with\nbuilt-in high availability and unrestricted cloud scalability.\nYou can centrally create, enforce, and log application and network connectivity policies across subscriptions and virtual networks. Azure Firewall uses a static public\nIP address for your virtual network resources allowing outside firewalls to identify traffic originating from your virtual network."
-    },
-    {
         "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYou have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating system. \nSolution: You use Bash in Azure Cloud Shell.\nDoes this meet the goal?",
         "options": [
             "A. Yes",
@@ -577,28 +840,6 @@ quiz_data = [
         ],
         "answer": "A",
         "explanation": "With Azure Cloud Shell, you can create virtual machines using Bash or PowerShell.\nAzure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience\nthat best suits the way you work, either Bash or PowerShell.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cloud-shell/quickstart\nhttps://docs.microsoft.com/en-us/azure/cloud-shell/overview"
-    },
-    {
-        "question": "Your company plans to move several servers to Azure.\nThe company’s compliance policy states that a server named FinServer must be on a separate network segment.\nYou are evaluating which Azure services can be used to meet the compliance policy requirements.\nWhich Azure solution should you recommend?",
-        "options": [
-            "A. a resource group for FinServer and another resource group for all the other servers",
-            "B. a virtual network for FinServer and another virtual network for all the other servers",
-            "C. a VPN for FinServer and a virtual network gateway for each other server",
-            "D. one resource group for all the servers and a resource lock for FinServer"
-        ],
-        "answer": "B",
-        "explanation": "Networks in Azure are known as virtual networks.  A virtual network can have multiple IP address spaces and multiple subnets.  Azure automatically routes traffic\nbetween different subnets within a virtual network.\nThe question states that FinServer must be on a separate network segment.  The only way to separate FinServer from the other servers in networking terms is to\nplace the server in a different virtual network to the other servers."
-    },
-    {
-        "question": "Your company plans to migrate all its network resources to Azure.\nYou need to start the planning process by exploring Azure.\nWhat should you create first?",
-        "options": [
-            "A. a subscription",
-            "B. a resource group",
-            "C. a virtual network",
-            "D. a management group"
-        ],
-        "answer": "C",
-        "explanation": "Azure Files is Microsoft's easy-to-use cloud file system. Azure file shares can be seamlessly used in Windows and Windows Server.\nTo use an Azure file share with Windows, you must either mount it, which means assigning it a drive letter or mount point path, or access it via its UNC path.\nUnlike other SMB shares you may have interacted with, such as those hosted on a Windows Server, Linux Samba server, or NAS device, Azure file shares do not\ncurrently support Kerberos authentication with your Active Directory (AD) or Azure Active Directory (AAD) identity, although this is a feature we are working on.\nInstead, you must access your Azure file share with the storage account key for the storage account containing your Azure file share. A storage account key is an\nadministrator key for a storage account, including administrator permissions to all files and folders within the file share you're accessing, and for all file shares and\nother storage resources (blobs, queues, tables, etc) contained within your storage account."
     },
     {
         "question": "You have an on-premises application that sends email notifications automatically based on a rule.\nYou plan to migrate the application to Azure.\nYou need to recommend a serverless computing solution for the application.\nWhat should you include in the recommendation?",
@@ -662,26 +903,6 @@ quiz_data = [
         ],
         "answer": "B",
         "explanation": "The command can be run from PowerShell or the command prompt if you have the Azure CLI installed. However, it must be run on the Windows 10 computer, not\nin Azure."
-    },
-    {
-        "question": "Which service provides serverless computing in Azure?",
-        "options": [
-            "A. Yes",
-            "B. No"
-        ],
-        "answer": "A",
-        "explanation": "A PowerShell script is a file that contains PowerShell cmdlets and code. A PowerShell script needs to be run in PowerShell.\nIn this question, the computer has the Azure PowerShell module installed. Therefore, this solution does meet the goal."
-    },
-    {
-        "question": "Which Azure service should you use to collect events from multiple resources into a centralized repository?",
-        "options": [
-            "A. Azure Resource Manager templates",
-            "B. virtual machine scale sets",
-            "C. the Azure API Management service",
-            "D. management groups"
-        ],
-        "answer": "A",
-        "explanation": "You can use Azure Resource Manager templates to automate the creation of the Azure resources.  Deploying resource through templates is known as\n‘Infrastructure as code’.\nTo implement infrastructure as code for your Azure solutions, use Azure Resource Manager templates. The template is a JavaScript Object Notation (JSON) file\nthat defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having\nto write the sequence of programming commands to create it. In the template, you specify the resources to deploy and the properties for those resources."
     },
     {
         "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYou have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating system. \nSolution: You use PowerShell in Azure Cloud Shell. \nDoes this meet the goal?",
@@ -946,17 +1167,7 @@ quiz_data = [
         "answer": "D",
         "explanation": "Many Azure resource have quote limits.  The purpose of the quota limits is to help you control your Azure costs.  However, it is common to require an increase to\nthe default quota.\nYou can request a quota limit increase by opening a support request.  In the support request, select ‘Service and subscription limits (quotas)’ for the Issue type,\nselect your subscription and the service you want to increase the quota for.  For this question, you would select ‘SQL Database Managed Instance’ as the quote\ntype."
     },
-    {
-        "question": "Your company plans to migrate to Azure. The company has several departments. All the Azure resources used by each department will be managed by a\ndepartment administrator. \nWhat are two possible techniques to segment Azure for the departments? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
-        "options": [
-            "A. multiple subscriptions",
-            "B. multiple Azure Active Directory (Azure AD) directories",
-            "C. multiple regions",
-            "D. multiple resource groups"
-        ],
-        "answer": "AD",
-        "explanation": "You can use resource tags to ‘label’ Azure resources.  Tags are metadata elements attached to resources. Tags consist of pairs of key/value strings.  In this\nquestion, we would tag each resource with a tag to identify each office.  For example: Location = Office1.  When all Azure resources are tagged, you can generate\nreports to list all resources based on the value of the tag.  For example: All resources used by Office1."
-    },
+    
     {
         "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYour company has an Azure subscription that contains the following unused resources:\n20 user accounts in Azure Active Directory (Azure AD)\nFive groups in Azure AD\n10 public IP addresses\n10 network interfaces\nYou need to reduce the Azure costs for the company.\nSolution: You remove the unused public IP addresses.\nDoes this meet the goal?",
         "options": [
