@@ -13,7 +13,7 @@ if not os.path.exists('./quizzes'):
     messagebox.showinfo("Info", "The 'quizzes' folder has been created. Add quiz files to start.")
 sys.path.append('./quizzes')
 
-# Scrolling
+# Scrollbar
 def on_frame_configure(event):
     # Update scrollable region dynamically
     main_canvas.configure(scrollregion=main_canvas.bbox("all"))
@@ -192,63 +192,7 @@ def next_question():
 ####################################################################################
 # Screen customize
 width = 1200
-height = 900
-
-###################
-### Main Window ###
-###################
-# root = tk.Tk()
-# root.title("Quiz App")
-# root.geometry(f"{width}x{height}")
-
-# # set style
-# style = Style(theme="flatly")
-# style.configure("success.TButton", background="green", foreground="white")
-# style.configure("danger.TButton", background="red", foreground="white")
-# style.configure("TLabel", font=("Helvetica", 14))
-# style.configure("TButton", font=("Helvetica", 13))
-# # title label
-# title_label = ttk.Label(root, font=("Helvetica", 16, "bold"))
-# title_label.pack(expand=True)
-
-# ##############
-# ### Frames ###
-# ##############
-# # question
-# qs_label = ttk.Label(root, anchor="center", wraplength=width-100, padding=10)
-# qs_label.pack(pady=10)
-
-# # hint: number of answers
-# answers_hint_label = ttk.Label(root, text="", anchor="center", padding=10)
-# answers_hint_label.pack(pady=5)
-
-# # options
-# options_frame = ttk.Frame(root)
-# options_frame.pack(pady=10)
-
-# # feedback
-# feedback_label_correctness = ttk.Label(root, anchor="center", padding=10)
-# feedback_label_correctness.pack(pady=5)
-# feedback_label_explanation = ttk.Label(root, anchor="center", wraplength=width-100, padding=10)
-# feedback_label_explanation.pack(pady=5)
-
-# # footer
-# footer_frame = ttk.Frame(root)
-# footer_frame.pack(pady=10)
-# # score
-# score_label = ttk.Label(footer_frame, text="Score: 0/0", anchor="center", padding=10)
-# # next button
-# next_btn = ttk.Button(footer_frame, text="Next", command=next_question, state="disabled")
-
-# ### Initialize dynamic components ###
-# choice_btns = []
-# quiz_data = []
-# current_question = 0
-# score = 0
-
-# show_file_selection()
-# root.mainloop()
-
+height = 800
 
 ###################
 ### Main Window ###
@@ -278,9 +222,6 @@ main_frame_id = main_canvas.create_window((0, 0), window=main_frame, anchor="n",
 # Configure canvas scrolling
 main_canvas.configure(yscrollcommand=scrollbar.set)
 main_frame.bind("<Configure>", on_frame_configure)
-
-
-
 main_canvas.bind_all("<MouseWheel>", on_mouse_wheel)
 
 #######################
@@ -291,7 +232,7 @@ title_label = ttk.Label(main_frame, text="Quiz App", font=("Helvetica", 16, "bol
 title_label.pack(pady=20, anchor="center")
 
 # Question label
-qs_label = ttk.Label(main_frame, text="Your question will appear here.", font=("Helvetica", 14), anchor="center", justify="center", wraplength=width - 50)
+qs_label = ttk.Label(main_frame, text="Your question will appear here.", font=("Helvetica", 14), anchor="center", justify="left", wraplength=width - 50)
 qs_label.pack(pady=10)
 
 # Hint: Number of answers
@@ -320,8 +261,6 @@ next_btn = ttk.Button(footer_frame, text="Next", command=next_question, state="d
 # Pack footer widgets
 score_label.pack(side="left", padx=10)
 next_btn.pack(side="left", padx=10)
-
-
 
 #########################
 ### Initialize Widgets ##
