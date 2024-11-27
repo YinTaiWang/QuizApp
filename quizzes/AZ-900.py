@@ -1,5 +1,5 @@
 # Reference:
-# https://www.gratisexam.com/
+# https://www.gratisexam.com/vce-to-pdf/microsoft/az-900/Microsoft.selftestengine.AZ-900.v2021-05-13.by.wanggang.117q.pdf/
 
 quiz_data = [
     {#1
@@ -107,7 +107,7 @@ quiz_data = [
         ],
         "answer": "B",
         "explanation": (
-            "Azure App Service is a PaaS (Platform as a Service) service. However, Azure Storage accounts are an IaaS (Infrastructure as a Service) service."
+            "Azure App Service is a PaaS (Platform as a Service) service. However, Azure Storage accounts are a Storage as a Service (STaaS) service."
             "\nTherefore, this solution does not meet the goal."
             )
         },
@@ -230,25 +230,18 @@ quiz_data = [
     },
     {#13 (12skip)
         "question": (
-            "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center."
-            "\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription."
-            "\nYou need to identify which expenditure model to use for the planned Azure solution."
-            "\n\nWhich expenditure model should you identify?"
+            "Your company has an on-premises network that contains multiple servers."
+            "\nThe company plans to reduce the following administrative responsibilities of network administrators:"
+            "\n- Backing up application data"
+            "\n- Replacing failed server hardware"
+            "\n- Managing physical server security"
+            "\n- Updating server operating systems"
+            "\n- Managing permissions to shared documents"
+            
+            "\n\nThe company plans to migrate several servers to Azure virtual machines."
+            "\nYou need to identify which administrative responsibilities will be eliminated after the planned migration."
+            "\nWhich two responsibilities should you identify? Each correct answer presents a complete solution."
             ),
-        "options": [
-            "A. operational",
-            "B. elastic",
-            "C. capital",
-            "D. scalable"
-        ],
-        "answer": "A",
-        "explanation": (
-            "One of the major changes that you will face when you move from on-premises cloud to the public cloud is the switch from capital expenditure (buying hardware) to operating expenditure (paying for service as you use it)."
-            "\nThis switch also requires more careful management of your costs. The benefit of the cloud is that you can fundamentally and positively affect the cost of a service you use by merely shutting down or resizing it when it's not needed."
-            )
-    },
-    {
-        "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure.\nWhich resource is an example of IaaS?",
         "options": [
             "A. Replacing failed server hardware",
             "B. Backing up application data",
@@ -256,41 +249,111 @@ quiz_data = [
             "D. Updating server operating systems",
             "E. Managing permissions to shared documents"
         ],
-        "answer": "AC",
-        "explanation": "Azure virtual machines run on Hyper-V physical servers.  The physical servers are owned and managed by Microsoft.  As an Azure customer, you have no access\nto the physical servers.  Microsoft manage the replacement of failed server hardware and the security of the physical servers so you don’t need to.\nIncorrect Answers:\nB: Microsoft have no control over the applications you run on the virtual machines.  Therefore, it is your responsibility to ensure that application data is backed up.\nD: Microsoft do not manage the operating systems you run on the virtual machines.  Therefore, it is your responsibility to ensure that the operating systems are\nupdated.\nE: Microsoft have no control over the shared folders you host on the virtual machines.  Therefore, it is your responsibility to ensure that folder permissions are\nconfigured appropriately.\nQUESTION 16\nYou plan to provision Infrastructure as a Service (IaaS) resources in Azure.\nWhich resource is an example of IaaS?\nA. an Azure web app\nB. an Azure virtual machine\nC. an Azure logic app\nD. an Azure SQL database\nCorrect Answer: B\nSection: Understand Cloud Concepts\nExplanation"
+        "answer": ["A","C"],
+        "explanation": (
+            "Azure virtual machines run on Hyper-V physical servers. The physical servers are owned and managed by Microsoft. As an Azure customer, you have no access to the physical servers. "
+            "\nMicrosoft manage the replacement of failed server hardware and the security of the physical servers so you don’t need to."
+            
+            "\n\nIncorrect Answers:"
+            "\nB: Microsoft have no control over the applications you run on the virtual machines. Therefore, it is your responsibility to ensure that application data is backed up."
+            "\nD: Microsoft do not manage the operating systems you run on the virtual machines. Therefore, it is your responsibility to ensure that the operating systems are updated."
+            "\nE: Microsoft have no control over the shared folders you host on the virtual machines. Therefore, it is your responsibility to ensure that folder permissions are configured appropriately."
+            )
     },
-    {
-        "question": "A team of developers at your company plans to deploy, and then remove, 50 virtual machines each week. All the virtual machines are configured by using Azure\nResource Manager templates.\nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual machines. \nWhat should you recommend?",
+    {#14
+        "question": (
+            "You plan to provision Infrastructure as a Service (IaaS) resources in Azure."
+            "\nWhich resource is an example of IaaS?"
+            ),
         "options": [
-            "A. Azure Reserved Virtual Machine (VM) Instances",
-            "B. Azure DevTest Labs",
-            "C. Azure virtual machine scale sets",
-            "D. Microsoft Managed Desktop"
+            "A. an Azure web app",
+            "B. an Azure virtual machine",
+            "C. an Azure logic app",
+            "D. an Azure SQL database",
         ],
         "answer": "B",
-        "explanation": "An Azure virtual machine is an example of Infrastructure as a Service (IaaS).\nAzure web app, Azure logic app and Azure SQL database are all examples of Platform as a Service (Paas)."
+        "explanation": (
+            "An Azure virtual machine is an example of Infrastructure as a Service (IaaS)."
+            "\nAzure web app, Azure logic app and Azure SQL database are all examples of Platform as a Service (Paas)."
+        )
     },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to migrate all its data and resources to Azure. \nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. \nYou need to deploy an Azure environment that meets the company migration plan. \nSolution: You create an Azure virtual machines, Azure SQL databases, and Azure Storage accounts. \nDoes this meet the goal?",
+    {#15
+        "question": (
+            "To which cloud models can you deploy physical servers?"
+            ),
+        "options": [
+            "A. private cloud and hybrid cloud only",
+            "B. private cloud only",
+            "C. private cloud, hybrid cloud and public cloud",
+            "D. hybrid cloud only",
+        ],
+        "answer": "A",
+        "explanation": (
+            "A private cloud is on-premises so you can deploy physical servers."
+            "\nA hybrid cloud is a mix of on-premise and public cloud resources. You can deploy physical servers on-premises."
+        )
+    },
+    {#17 (skip 16)
+        "question": (
+            "You have 50 virtual machines hosted on-premises and 50 virtual machines hosted in Azure. The on-premises virtual machines and the Azure virtual machines connect to each other."
+            "\nWhich type of cloud model is this?"
+            ),
+        "options": [
+            "A. hybrid",
+            "B. private",
+            "C. public",
+        ],
+        "answer": "A",
+        "explanation": ""
+    },
+    {#18
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company plans to migrate all its data and resources to Azure."
+            "\nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure."
+            "\nYou need to deploy an Azure environment that meets the company migration plan."
+            "\nSolution: You create Azure virtual machines, Azure SQL databases, and Azure Storage accounts."
+            
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "B",
-        "explanation": "This answer does not specify that the scale set will be configured across multiple data centers so this solution does not meet the goal.\nAzure virtual machine scale sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in\nresponse to demand or a defined schedule. Scale sets provide high availability to your applications, and allow you to centrally manage, configure, and update many\nVMs. \nVirtual machines in a scale set can be deployed across multiple update domains and fault domains to maximize availability and resilience to outages due to data\ncenter outages, and planned or unplanned maintenance events.  \nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/availability\nQUESTION 20\nNote: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to migrate all its data and resources to Azure. \nThe company’s migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. \nYou need to deploy an Azure environment that meets the company migration plan. \nSolution: You create an Azure virtual machines, Azure SQL databases, and Azure Storage accounts. \nDoes this meet the goal?\nA. Yes"
+        "explanation": (
+            "Azure Virtual Machines are an Infrastructure as a Service (IaaS) offering, and Azure Storage Accounts are not strictly categorized as Platform as a Service (PaaS), which violates the migration plan's requirements."
+        )
     },
-    {
-        "question": "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the customers of the company. Each\napplication will have several prerequisite applications and services installed.\nYou need to recommend a cloud deployment solution for all the applications.\nWhat should you recommend?",
+    {#19
+        "question": (
+            "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the customers of the company."
+            "Each application will have several prerequisite applications and services installed."
+            "\nYou need to recommend a cloud deployment solution for all the applications. What should you recommend?"
+            ),
         "options": [
             "A. Software as a Service (SaaS)",
             "B. Platform as a Service (PaaS)",
             "C. Infrastructure as a Service (laaS)"
         ],
-        "answer": "B",
-        "explanation": "Platform as a service (PaaS) is a complete development and deployment environment in the cloud. PaaS includes infrastructure — servers, storage, and\nnetworking — but also middleware, development tools, business intelligence (BI) services, database management systems, and more. PaaS is designed to support\nthe complete web application lifecycle: building, testing, deploying, managing, and updating.\nHowever, virtual machines are examples of Infrastructure as a service (IaaS). IaaS is an instant computing infrastructure, provisioned and managed over the\ninternet."
+        "answer": "C",
+        "explanation": (
+            "C. Infrastructure as a Service (IaaS) provides full control over the virtual machines, allowing the installation of prerequisite applications and services required by the custom applications."
+            
+            "\n\nIncorrect Answers:"
+            "\nA: SaaS (Software as a Service) is not suitable because it offers ready-to-use applications without the ability to customize underlying systems or install prerequisite applications."
+            "\nB: PaaS (Platform as a Service) provides a managed environment for deploying applications but does not allow full control to install prerequisite services or manage the operating system."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nAn Azure region contains one or more data centers that are connected by using a low-latency network. \nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#20
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            "\n\nAn Azure region \"contains one or more data centers that are connected by using a low-latency network\"."
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
         "options": [
             "A. No change is needed",
             "B. Is found in each country where Microsoft has a subsidiary office",
@@ -298,7 +361,137 @@ quiz_data = [
             "D. Contains one or more data centers that are connected by using a high-latency network"
         ],
         "answer": "A",
-        "explanation": "A region is a set of data centres deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.\nMicrosoft Azure currently has 55 regions worldwide.\nRegions are divided into Availability Zones. Availability Zones are physically separate locations within an Azure region. Each Availability Zone is made up of one or\nmore datacenters equipped with independent power, cooling, and networking."
+        "explanation": (
+            "An Azure region indeed contains one or more data centers that are connected by using a low-latency network, as stated."
+            "This definition ensures fast and reliable communication between data centers within a region, which is crucial for delivering cloud services efficiently."
+            )
+    },
+    {#21
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou plan to deploy several Azure virtual machines."
+            "\nYou need to ensure that the services running on the virtual machines are available if a single data center fails."
+            "\nSolution: You deploy the virtual machines to two or more availability zones."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": (
+            "Each Availability Zone has a distinct power source, network, and cooling. By architecting your solutions to use replicated VMs in zones, you can protect your apps and data from the loss of a datacenter."
+            "If one zone is compromised, then replicated apps and data are instantly available in another zone."
+            )
+    },
+    {#22
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            "\n\nOne of the benefits of Azure SQL Data Warehouse is that \"high availability\" is built into the platform."
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
+        "options": [
+            "A. No change is needed",
+            "B. automatic scaling",
+            "C. data compression",
+            "D. versioning"
+        ],
+        "answer": "A",
+        "explanation": (
+            "Azure Data Warehouse (now known as Azure Synapse Analytics) is a PaaS offering from Microsoft. As with all PaaS services from Microsoft, SQL Data"
+            "Warehouse offers an availability SLA of 99.9%. Microsoft can offer 99.9% availability because it has high availability features built into the platform."
+            )
+    },
+    {#23
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou plan to deploy several Azure virtual machines."
+            "\nYou need to ensure that the services running on the virtual machines are available if a single data center fails."
+            "\nSolution: You deploy the virtual machines to two or more regions."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "A",
+        "explanation": (
+            "By deploying the virtual machines to two or more regions, you are effectively deploying them to multiple datacenters, as each Azure region consists of multiple datacenters. This setup ensures that if a single data center or an entire region fails, the services remain available, meeting the goal of ensuring high availability."
+            )
+    },
+    {#24
+        "question": (
+            "You plan to store 20 TB of data in Azure. The data will be accessed infrequently and visualized by using Microsoft Power BI."
+            "\nYou need to recommend a storage solution for the data."
+            "\nWhich two solutions should you recommend? Each correct answer presents a complete solution."
+            ),
+        "options": [
+            "A. Azure Data Lake",
+            "B. Azure Cosmos DB",
+            "C. Azure SQL Data Warehouse",
+            "D. Azure SQL Database",
+            "E. Azure Database for PostgreSQL"
+        ],
+        "answer": ["A","C"],
+        "explanation": (
+            "You can use Power BI to analyze and visualize data stored in Azure Data Lake and Azure SQL Data Warehouse."
+            "\nAzure Data Lake is cost-effective for storing large amounts of structured and unstructured data that is infrequently accessed."
+            "\nAzure SQL Data Warehouse (now Azure Synapse Analytics) is optimized for large-scale data storage and processing, making it ideal for querying and analyzing big datasets."
+            
+            "\n\nIncorrect Answers:"
+            "\nB. Azure Cosmos DB: A NoSQL database optimized for high throughput and low latency, but it's not ideal for infrequently accessed large datasets."
+            "\nD. Azure SQL Database: A transactional relational database not designed for managing or analyzing 20 TB of infrequently accessed data."
+            "\nE. Azure Database for PostgreSQL: Suitable for relational database workloads but not optimized for large-scale analytics or infrequent access."
+        )
+    },
+    {#25
+        "question": (
+            "You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services."
+            "\nWhat should you identify?"
+            ),
+        "options": [
+            "A. a physical server failure",
+            "B. an Azure region failure",
+            "C. a storage failure",
+            "D. an Azure data center failure"
+        ],
+        "answer": "D",
+        "explanation": (
+            "Azure Availability Zones are designed to protect against Azure data center failures. Each Availability Zone is a physically separate location within an Azure region, with independent power, cooling, and networking."
+            "\nBy deploying resources across multiple Availability Zones, you can ensure service continuity in case of a single data center failure."
+            "\nThey do not provide protection against entire region failures or specific server or storage failures."
+            )
+    },
+    {#26
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYou plan to deploy several Azure virtual machines."
+            "\nYou need to ensure that the services running on the virtual machines are available if a single data center fails."
+            "\nSolution: You deploy the virtual machines to two or more resource groups."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "A resource group is a logical container for Azure resources. When you create a resource group, you specify which location to create the resource group in."
+            "\nHowever, when you create a virtual machine and place it in the resource group, the virtual machine can still be in a different location (different datacenter)."
+            "\nTherefore, creating multiple resource groups, even if they are in separate datacenters does not ensure that the services running on the virtual machines are available if a single data center fails."
+            )
     },
     {
         "question": "A team of developers at your company plans to deploy, and then remove, 50 customized virtual machines each week. Thirty of the virtual machines run Windows\nServer 2016 and 20 of the virtual machines run Ubuntu Linux. \nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual machines. \nWhat should you recommend?",
@@ -941,5 +1134,16 @@ quiz_data = [
         ],
         "answer": "A",
         "explanation": "By deploying the virtual machines to two or more regions, you are deploying the virtual machines to multiple datacenters.  This will ensure that the services running\non the virtual machines are available if a single data center fails.\nAzure operates in multiple datacenters around the world. These datacenters are grouped in to geographic regions, giving you flexibility in choosing where to build\nyour applications.\nYou create Azure resources in defined geographic regions like 'West US', 'North Europe', or 'Southeast Asia'. You can review the list of regions and their locations.\nWithin each region, multiple datacenters exist to provide for redundancy and availability.\nReference:\nhttps://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions"
+    },
+    {
+        "question": "A team of developers at your company plans to deploy, and then remove, 50 virtual machines each week. All the virtual machines are configured by using Azure\nResource Manager templates.\nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual machines. \nWhat should you recommend?",
+        "options": [
+            "A. Azure Reserved Virtual Machine (VM) Instances",
+            "B. Azure DevTest Labs",
+            "C. Azure virtual machine scale sets",
+            "D. Microsoft Managed Desktop"
+        ],
+        "answer": "B",
+        "explanation": "An Azure virtual machine is an example of Infrastructure as a Service (IaaS).\nAzure web app, Azure logic app and Azure SQL database are all examples of Platform as a Service (Paas)."
     },
 ]
