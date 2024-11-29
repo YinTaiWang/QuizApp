@@ -42,7 +42,7 @@ def load_quiz(file_name):
 
         # Load quiz data
         quiz_data = quiz_module.quiz_data
-        # random.shuffle(quiz_data)  # Randomize the order of questions
+        random.shuffle(quiz_data)  # Randomize the order of questions
         current_question = 0
         score = 0
 
