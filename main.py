@@ -118,6 +118,18 @@ def check_answer(choice):
     selected_button = choice_btns[choice]
     selected_choice = selected_button.cget("text")  # Get full button text
 
+    # Add a set to track which buttons have been clicked
+    if not hasattr(check_answer, "clicked_buttons"):
+        check_answer.clicked_buttons = set()
+
+    # Prevent multiple clicks on the same button from affecting the score
+    if selected_button in check_answer.clicked_buttons:
+        feedback_label_correctness.config(text="You already selected this answer!", foreground="orange")
+        return
+
+    # Add the button to the clicked set
+    check_answer.clicked_buttons.add(selected_button)
+
     # Check if the answer is a list or a single string
     if isinstance(question["answer"], list):
         # If the answer is a list, handle prefixes (e.g., "A. Option")
@@ -158,6 +170,7 @@ def check_answer(choice):
             
             # Enable the Next button
             next_btn.config(state="normal")
+
 
     else:
         # If the answer is a single string, compare directly with the full choice text
