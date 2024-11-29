@@ -1858,63 +1858,28 @@ quiz_data = [
             "\nD. Premier: This is the most comprehensive and expensive plan, offering tailored support for large enterprises."
             )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nAn Availability Zone in Azure has physically separate locations across two continents.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed.” If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#103
+        "question": (
+            "In which Azure support plans can you open a new support request?"
+            ),
         "options": [
-            "A. No change is needed.",
-            "B. within a single Azure region",
-            "C. within multiple Azure regions",
-            "D. within a single Azure datacenter"
-        ],
-        "answer": "A",
-        "explanation": "Azure Site Recovery helps ensure business continuity by keeping business apps and workloads running during outages. Site Recovery replicates workloads running\non physical and virtual machines (VMs) from a primary site to a secondary location."
-    },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nAzure Key Vault is used to store secrets for Azure Active Directory (Azure AD) user accounts.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
-        "options": [
-            "A. the Knowledge Center",
-            "B. Azure Marketplace",
-            "C. the MyApps portal",
-            "D. the Trust Center"
-        ],
-        "answer": "D",
-        "explanation": "Azure has more than 90 compliance certifications, including over 50 specific to global regions and countries, such as the US, the European Union, Germany, Japan,\nthe United Kingdom, India and China.\nYou can view a list of compliance certifications in the Trust Center to determine whether Azure meets your regional requirements."
-    },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nResource groups provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions. \nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
-        "options": [
-            "A. No change is needed",
-            "B. Management groups",
-            "C. Azure policies",
-            "D. Azure App Service plans"
+            "A. Premier and Professional Direct only",
+            "B. Premier, Professional Direct, and Standard only",
+            "C. Premier, Professional Direct, Standard, and Developer only",
+           " D. Premier, Professional Direct, Standard, Developer, and Basic"
         ],
         "answer": "C",
-        "explanation": "Azure AD authenticates users and provides access tokens. An access token is a security token that is issued by an authorization server. It contains information\nabout the user and the app for which the token is intended, which can be used to access Web APIs and other protected resources.\nInstead of creating apps that each maintain their own username and password information, which incurs a high administrative burden when you need to add or\nremove users across multiple apps, apps can delegate that responsibility to a centralized identity provider.\nAzure Active Directory (Azure AD) is a centralized identity provider in the cloud. Delegating authentication and authorization to it enables scenarios such as\nConditional Access policies that require a user to be in a specific location, the use of multi-factor authentication, as well as enabling a user to sign in once and then\nbe automatically signed in to all of the web apps that share the same centralized directory. This capability is referred to as Single Sign On (SSO)."
+        "explanation": (
+            "You can open support cases in the following plans: Premier, Professional Direct, Standard, and Developer only."
+            "You cannot open support cases in the Basic support plan."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nFrom Azure Monitor, you can view which user turned off a specific virtual machine during the last 14 days.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
-        "options": [
-            "A. No change is needed",
-            "B. Azure Event Hubs",
-            "C. Azure Activity Log",
-            "D. Azure Service Health"
-        ],
-        "answer": "C",
-        "explanation": "Compliance Manager in the Service Trust Portal is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory\ncompliance activities related to Microsoft Cloud services, such as Microsoft 365, Dynamics 365, and Azure.\nReference:\nhttps://docs.microsoft.com/en-us/microsoft-365/compliance/get-started-with-service-trust-portal?view=o365-worldwide\nQUESTION 80\nThis question requires that you evaluate the underlined text to determine if it is correct. \nFrom Azure Monitor, you can view which user turned off a specific virtual machine during the last 14 days.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct. \nA. No change is needed\nB. Azure Event Hubs\nC. Azure Activity Log\nD. Azure Service Health\nCorrect Answer: C\nSection: Understand Security, Privacy, Compliance and Trust\nExplanation\nExplanation/Reference:\nExplanation:\nYou would use the Azure Activity Log, not Azure Monitor to view which user turned off a specific virtual machine during the last 14 days.\nActivity logs are kept for 90 days. You can query for any range of dates, as long as the starting date isn't more than 90 days in the past.\nIn this question, we would create a filter to display shutdown operations on the virtual machine in the last 14 days."
-    },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nThe Microsoft Online Services Privacy Statement explains what data Microsoft processes, how Microsoft processes the data, and the purpose of processing the\ndata.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed.” If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
-        "options": [
-            "A. No change is needed.",
-            "B. the Microsoft Cloud Partner Portal",
-            "C. Compliance Manager",
-            "D. the Trust Center"
-        ],
-        "answer": "C",
-        "explanation": "Microsoft Compliance Manager (Preview) is a free workflow-based risk assessment tool that lets you track, assign, and verify regulatory compliance activities\nrelated to Microsoft cloud services. Azure Cloud Shell, on the other hand, is an interactive, authenticated, browser-accessible shell for managing Azure resources."
-    },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nYou can create an Azure support request from support.microsoft.com.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed.” If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#104
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            "\n\nYou can create an Azure support request from \"support.microsoft.com\"."
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
         "options": [
             "A. No change is needed.",
             "B. the Azure portal",
@@ -1922,30 +1887,58 @@ quiz_data = [
             "D. the Security & Compliance admin center"
         ],
         "answer": "B",
-        "explanation": "You can open support cases in the following plans: Premier, Professional Direct, Standard, and Developer only.\nYou cannot open support cases in the Basic support plan."
+        "explanation": (
+            "You can create an Azure support request from the Help and Support blade in the Azure portal or from the context menu of an Azure resource in the Support + Troubleshooting section."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nThe Azure Standard support plan is the lowest cost option to receive 24x7 access to support engineers by phone.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#105
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company has an Azure subscription that contains the following unused resources:"
+            "\n- 20 user accounts in Azure Active Directory (Azure AD)"
+            "\n- Five groups in Azure AD"
+            "\n- 10 public IP addresses"
+            "\n- 10 network interfaces"
+            "\nYou need to reduce the Azure costs for the company."
+            "\nSolution: You remove the unused groups."
+            
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "B",
-        "explanation": "No explanation provided."
+        "explanation": (
+            "You are not charged for Azure Active Directory Groups. Therefore, deleting unused groups will not reduce your Azure costs."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nAll Azure services that are in public preview are provided without any documentation.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#106
+        "question": (
+            "This question requires that you evaluate the underlined text to determine if it is correct."
+            "\n\nThe Azure \"Standard\" support plan is the lowest cost option to receive 24x7 access to support engineers by phone."
+            "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
+            ),
         "options": [
             "A. No change is needed",
-            "B. only configurable from Azure CLI",
-            "C. excluded from the Service Level Agreements",
-            "D. only configurable from the Azure portal"
+            "B. Developer",
+            "C. Basic",
+            "D. Professional Direct"
         ],
-        "answer": "C",
-        "explanation": "The Basic support plan is free so is therefore the cheapest.  The Developer support plan is the cheapest paid-for support plan.  The order of support plans in terms\nof cost ranging from the cheapest to most expensive is: Basic, Developer, Standard, Professional Direct, Premier.\nHowever, 24/7 access to technical support by email and phone is only available for Standard, Professional Direct, Premier plans."
+        "answer": "B",
+        "explanation": (
+            "The Standard support plan is the lowest-cost Azure support plan that provides 24x7 access to support engineers by phone."
+            "\nThe Basic plan provides no technical support, while the Developer plan offers support during business hours via email only."
+            "\nThe Professional Direct plan is more comprehensive and comes at a higher cost."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nAn Azure service is available to all Azure customers when it is in public preview.\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#107
+        "question": (
+            "What is guaranteed in an Azure Service Level Agreement (SLA) for virtual machines?"
+            ),
         "options": [
             "A. uptime",
             "B. feature availability",
@@ -1953,76 +1946,236 @@ quiz_data = [
             "D. performance"
         ],
         "answer": "A",
-        "explanation": "The SLA for virtual machines guarantees ‘uptime’. The amount of uptime guaranteed depends on factors such as whether the VMs are in an availability set or\navailability zone if there is more than one VM, the distribution of the VMs if there is more than one or the disk type if it is a single VM.\nThe SLA for Virtual Machines states:\nFor all Virtual Machines that have two or more instances deployed across two or more Availability Zones in the same Azure region, we guarantee you will have\nVirtual Machine Connectivity to at least one instance at least 99.99% of the time.\nFor all Virtual Machines that have two or more instances deployed in the same Availability Set or in the same Dedicated Host Group, we guarantee you will have\nVirtual Machine Connectivity to at least one instance at least 99.95% of the time.\nFor any Single Instance Virtual Machine using Premium SSD or Ultra Disk for all Operating System Disks and Data Disks, we guarantee you will have Virtual\nMachine Connectivity of at least 99.9%."
+        "explanation": (
+            "Azure Service Level Agreements (SLAs) for virtual machines guarantee uptime, ensuring a specified level of availability for running VMs. For example, Azure offers a 99.9% SLA for a single VM and up to 99.99% for VMs configured in an availability set or availability zones."
+            )
     },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email.  \nYou need to recommend which support plan meets the support policy requirement. \nSolution: Recommend a Basic support plan. \nDoes this meet the goal?",
+    {#108
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company plans to purchase an Azure subscription."
+            "\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email."
+            "\nYou need to recommend which support plan meets the support policy requirement."
+            "\nSolution: Recommend a Basic support plan."
+            
+            "\n\nDoes this meet the goal?"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "The Basic support plan does not have any technical support for engineers."
+            "\nAccess to Support Engineers via email or phone is available in the following support plans: Premier, Professional Direct and standard."
+            )
+    },
+    {#109
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company plans to purchase an Azure subscription."
+            "\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email."
+            "\nYou need to recommend which support plan meets the support policy requirement."
+            "\nSolution: Recommend a Standard support plan."
+            
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "A",
-        "explanation": "Public Preview means that the service is in public beta and can be tried out by anyone with an Azure subscription. Services in public preview are often offered at a\ndiscount price.  \nPublic previews are excluded from SLAs and in some cases, no support is offered.\nIncorrect Answers:\nB: Services in private preview are available only to selected people who has signed up to the private preview program.\nC: Services in development are not available to the public.\nD: Services provided under an Enterprise Agreement (EA) subscription are available only to the subscription owner."
+        "explanation": (
+            "The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone."
+            )
     },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to purchase an Azure subscription. \nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email.  \nYou need to recommend which support plan meets the support policy requirement. \nSolution: Recommend a Standard support plan. \nDoes this meet the goal?",
+    {#110
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company plans to purchase an Azure subscription."
+            "\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email."
+            "\nYou need to recommend which support plan meets the support policy requirement."
+            "\nSolution: Recommend a Premier support plan."
+            
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "A",
-        "explanation": "The Basic support plan does not have any technical support for engineers.\nAccess to Support Engineers via email or phone is available in the following support plans: Premier, Professional Direct and standard."
+        "explanation": (
+            "The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone."
+            )
     },
-    {
-        "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to purchase an Azure subscription.\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email.  \nYou need to recommend which support plan meets the support policy requirement. \nSolution: Recommend a Premier support plan. \nDoes this meet the goal?",
+    {#111
+        "question": (
+            "\nYour company plans to request an architectural review of an Azure environment from Microsoft."
+            "\nThe company currently has a Basic support plan."
+            "\nYou need to recommend a new support plan for the company. The solution must minimize costs."
+            "\nWhich support plan should you recommend?"
+            ),
+        "options": [
+            "A. Premier",
+            "B. Developer",
+            "C. Professional Direct",
+            "D. Standard"
+        ],
+        "answer": "A",
+        "explanation": (
+            "The Premier support plan is the only Azure support plan that allows customers to request a formal architectural review of their Azure environment from Microsoft."
+            "\nWhile other plans, such as Professional Direct, offer advisory services and guidance, they do not include the capability to request a detailed architectural review."
+            "\nThe Premier plan provides comprehensive and personalized support, including architectural services, but it comes at a higher cost."
+            )
+    },
+    {#112-1
+        "question": (
+            "select Yes if the statement is true. Otherwise, select No."
+            "\n\nMost Azure services are introduced in private preview before being introduced in public preview, and then in general availability"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "A",
-        "explanation": "The Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone."
+        "explanation": (
+            "Most services go to private preview then public preview before being released to general availability."
+            "\nThe private preview is only available to certain Azure customers for evaluation purposes. The public preview is available to all Azure customers."
+            )
     },
-    {
-        "question": "What is required to use Azure Cost Management?",
+    {#112-2
+        "question": (
+            "select Yes if the statement is true. Otherwise, select No."
+            "\n\nAzure services in public preview can be managed only by using the Azure CLI"
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Azure services in public preview can be managed using the regular management tools: Azure Portal, Azure CLI and PowerShell."
+            )
+    },
+    {#112-3
+        "question": (
+            "select Yes if the statement is true. Otherwise, select No."
+            "\n\nThe cost of an Azure service in private preview decreases when the service becomes generally availability."
+            ),
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "answer": "B",
+        "explanation": (
+            "Services in private or public preview are usually offered at reduced costs. However, the costs increase, not decrease when the services are released to general availability."
+            )
+    },
+    {#113
+        "question": (
+            "What is required to use Azure Cost Management?"
+            ),
         "options": [
             "A. a Dev/Test subscription",
             "B. Software Assurance",
             "C. an Enterprise Agreement (EA)",
             "D. a pay-as-you-go subscription"
         ],
-        "answer": "A",
-        "explanation": "The Premier support plan provides customer specific architectural support such as design reviews, performance tuning, configuration and implementation\nassistance delivered by Microsoft Azure technical specialists."
+        "answer": "D",
+        "explanation": (
+            "Azure Cost Management is available for all pay-as-you-go subscriptions, including those under Microsoft Customer Agreements and Enterprise Agreements (EA). It allows you to monitor, analyze, and optimize Azure spending. While it is also available for EA and other subscription types, a pay-as-you-go subscription is sufficient to use Azure Cost Management."
+            
+            "\n\nIncorrect Answers:"
+            "\nA. a Dev/Test subscription: Dev/Test subscriptions are specific to development and testing purposes but do not affect the use of Azure Cost Management."
+            "\nB. Software Assurance: This is a licensing benefit for on-premises software and is unrelated to Azure Cost Management."
+            "\nC. an Enterprise Agreement (EA): While Azure Cost Management supports EA subscriptions, it is not required; other subscription types, like pay-as-you-go, can also use this feature."
+            )
     },
-    {
-        "question": "This question requires that you evaluate the underlined text to determine if it is correct. \nYour Azure trial account expired last week. You are now unable to create additional Azure Active Directory (Azure AD) user accounts. \nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that\nmakes the statement correct.",
+    {#114
+        "question": (
+            "To complete the sentence, select the appropriate option in the answer area."
+            "\nYou are trial account expired last week."
+            "\nYou are now unable to ..."
+            ),
         "options": [
-            "A. No change is needed",
-            "B. start an existing Azure virtual machine",
-            "C. access your data stored in Azure",
+            "A. Create additional Azure Active Directory (Azure AD) user accounts",
+            "B. Start an existing Azure virtual machine",
+            "C. access your data stored in Azure"
             "D. access the Azure portal"
         ],
         "answer": "B",
-        "explanation": "A stopped (deallocated) VM is offline and not mounted on an Azure host server.  Starting a VM mounts the VM on a host server before the VM starts.  As soon as\nthe VM is mounted, it becomes chargeable.  For this reason, you are unable to start a VM after a trial has expired.\nIncorrect Answers:\nA: You are not charged for Azure Active Directory user accounts so you can continue to create accounts.\nC: You can access data that is already stored in Azure.\nD: You can access the Azure Portal.  You can also reactivate and upgrade the expired subscription in the portal.\nQUESTION 106\nNote: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might\nmeet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. \nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. \nYour company plans to purchase an Azure subscription. \nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email. \nYou need to recommend which support plan meets the support policy requirement. \nSolution: Recommend a Professional Direct support plan."
+        "explanation": (
+            "When an Azure free trial account expires, you cannot use paid services, such as starting an existing virtual machine."
+            "\nHowever, you can still access the Azure portal and manage your resources, including upgrading your subscription. Your data remains accessible, but you must reactivate the subscription or upgrade to a paid plan to restart services like virtual machines."
+            )
     },
-    {
-        "question": "Your company has 10 departments.\nThe company plans to implement an Azure environment.\nYou need to ensure that each department can use a different payment option for the Azure services it consumes.\nWhat should you create for each department?",
+    {#115
+        "question": (
+            "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals."
+            "\nSome question sets might have more than one correct solution, while others might not have a correct solution."
+            "\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen."
+            
+            "\n\n\nYour company plans to purchase an Azure subscription."
+            "\nThe company’s support policy states that the Azure environment must provide an option to access support engineers by phone or email."
+            "\nYou need to recommend which support plan meets the support policy requirement."
+            "\nSolution: Recommend a Professional Direct support plan."
+            
+            "\n\nDoes this meet the goal?"
+            ),
         "options": [
             "A. Yes",
             "B. No"
         ],
         "answer": "A",
-        "explanation": "The Basic support plan does not have any technical support for engineers.\nThe Developer support plan has only technical support for engineers via email.\nThe Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone."
+        "explanation": (
+            "The Basic support plan does not have any technical support for engineers."
+            "\nThe Developer support plan has only technical support for engineers via email."
+            "\nThe Standard, Professional Direct, and Premier support plans have technical support for engineers via email and phone."
+            )
     },
-    {
-        "question": "Which statement accurately describes the Modern Lifecycle Policy for Azure services?",
+    {#116
+        "question": (
+            "Your company has a Software Assurance agreement that includes Microsoft SQL Server licenses."
+            "\nYou plan to deploy SQL Server on Azure virtual machines."
+            "\nWhat should you do to minimize licensing costs for the deployment?"
+            ),
         "options": [
-            "A. Microsoft provides mainstream support for a service for five years.",
-            "B. Microsoft provides a minimum of 12 months’ notice before ending support for a service.",
-            "C. After a service is made generally available, Microsoft provides support for the service for a minimum of four years.",
-            "D. When a service is retired, you can purchase extended support for the service for up to five years."
+            "A. Deallocate the virtual machines during off hours.",
+            "B. Use Azure Hybrid Benefit.",
+            "C. Configure Azure Cost Management budgets.",
+            "D. Use Azure reservations."
         ],
         "answer": "B",
-        "explanation": "For products governed by the Modern Lifecycle Policy, Microsoft will provide a minimum of 12 months' notification prior to ending support if no successor product or\nservice is offered—excluding free services or preview releases."
+        "explanation": (
+            "The Azure Hybrid Benefit allows organizations with Software Assurance (SA) to use their existing on-premises SQL Server licenses on Azure, reducing licensing costs for SQL Server deployments on Azure virtual machines. This is the most effective way to minimize costs in this scenario."
+            )
+    },
+    {#117
+        "question": (
+            "Your company has 10 departments."
+            "\nThe company plans to implement an Azure environment."
+            "\nYou need to ensure that each department can use a different payment option for the Azure services it consumes."
+            "\nWhat should you create for each department?"
+            ),
+        "options": [
+            "A. a reservation",
+            "B. a subscription",
+            "C. a resource group",
+            "D. a container instance"
+        ],
+        "answer": "B",
+        "explanation": (
+            "In Azure, subscriptions are the billing entities that determine how resources are paid for. To allow each department to use a different payment option, you should create a separate subscription for each department. Each subscription can have its own billing arrangement, enabling departments to manage their costs independently."
+            )
     },
     {#ex
         "question": (
