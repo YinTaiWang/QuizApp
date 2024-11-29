@@ -61,8 +61,6 @@ An example quiz can be found in the `quizzes` folder under `example.py`. It prov
 
 ## Screenshots
 
-Include visual examples of the app in action to give users a preview of its functionality.
-
 **Main Menu:**  
 ![Main Menu](https://raw.githubusercontent.com/YinTaiWang/QuizApp/main/screenshots/main_menu.png)
 

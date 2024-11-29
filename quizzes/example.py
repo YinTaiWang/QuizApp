@@ -46,6 +46,6 @@ quiz_data = [
         "options": ["Python", "HTML", "Java", "CSS"],
         "answer": ["Python", "Java"],  # Multiple answers with full text
         "explanation": "Python and Java are programming languages, while HTML and CSS are markup and styling languages."
-    }
+    },
     # Add more questions
 ]
