@@ -330,7 +330,7 @@ quiz_data = [
     },
     {#19
         "question": (
-            "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the customers of the company."
+            "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the customers of the company. "
             "Each application will have several prerequisite applications and services installed."
             "\nYou need to recommend a cloud deployment solution for all the applications. What should you recommend?"
             ),
@@ -1368,9 +1368,9 @@ quiz_data = [
             "\nWhat should you include in the solution?"
             ),
         "options": [
-            "A. Azure Firewall"
-            "B. a network security group (NSG)"
-            "C. Azure Information Protection"
+            "A. Azure Firewall",
+            "B. a network security group (NSG)",
+            "C. Azure Information Protection",
             "D. DDoS protection"
         ],
         "answer": "D",
@@ -1390,9 +1390,9 @@ quiz_data = [
             "\nWhat are two possible solutions? Each correct answer presents a complete solution."
             ),
         "options": [
-            "A. Modify an Azure Traffic Manager profile"
-            "B. Modify a network security group (NSG)"
-            "C. Modify a DDoS protection plan"
+            "A. Modify an Azure Traffic Manager profile",
+            "B. Modify a network security group (NSG)",
+            "C. Modify a DDoS protection plan",
             "D. Modify an Azure firewall"
         ],
         "answer": ["B","D"],
@@ -1656,9 +1656,9 @@ quiz_data = [
             "\n\nInstructions: Review the underlined text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct."
             ),
         "options": [
-            "A. No change is needed."
-            "B. the Microsoft Cloud Partner Portal"
-            "C. Compliance Manager"
+            "A. No change is needed.",
+            "B. the Microsoft Cloud Partner Portal",
+            "C. Compliance Manager",
             "D. the Trust Center"
         ],
         "answer": "C",
@@ -2109,7 +2109,7 @@ quiz_data = [
         "options": [
             "A. Create additional Azure Active Directory (Azure AD) user accounts",
             "B. Start an existing Azure virtual machine",
-            "C. access your data stored in Azure"
+            "C. access your data stored in Azure",
             "D. access the Azure portal"
         ],
         "answer": "B",

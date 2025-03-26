@@ -182,6 +182,9 @@ def check_answer(choice):
         else:
             feedback_label_correctness.config(text="Incorrect!", foreground="red")
             selected_button.configure(bootstyle="danger")
+            
+        # Show the explanation
+        feedback_label_explanation.config(text=question.get("explanation", ""), foreground="black")
 
         # Disable all buttons after a single choice
         for i, button in enumerate(choice_btns):
@@ -260,7 +263,7 @@ options_frame.pack(pady=10)
 feedback_label_correctness = ttk.Label(main_frame, font=("Helvetica", 12), anchor="center", justify="center")
 feedback_label_correctness.pack(pady=5)
 
-feedback_label_explanation = ttk.Label(main_frame, font=("Helvetica", 12), wraplength=width - 50, anchor="center", justify="center")
+feedback_label_explanation = ttk.Label(main_frame, font=("Helvetica", 12), wraplength=width - 50, anchor="center", justify="left")
 feedback_label_explanation.pack(pady=5)
 
 # Footer frame
